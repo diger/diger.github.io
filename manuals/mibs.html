@@ -1,35 +1,37 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>Help/Manuals</title>
+  <title>Mibs</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="css/uikit.min.css" />
-  <script src="js/uikit.min.js"></script>
-  <script src="js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="/css/uikit.min.css" />
+  <script src="/js/uikit.min.js"></script>
+  <script src="/js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <div class="uk-navbar-container" uk-navbar>
-      <div class="uk-navbar-center">
-        <ul class="uk-navbar-nav">
-          <li><a href="/"><span uk-icon="icon: home"></span></a></li>
-          
-            <li><a href="http://abills.net.ua/">ABillS</a></li>
-          
-            <li><a href="https://github.com/diger/Nms">Github</a></li>
-          
-            <li><a href="/help.html">Help</a></li>
-          
-            <li><a href="/screenshots.html">Screenshots</a></li>
-          
-        </ul>
-      </div>
+  <div class="uk-container uk-container-center">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+      <nav class="uk-navbar-container uk-dark" uk-navbar>
+          <ul class="uk-navbar-nav">
+            <li><a href="/" class="uk-icon-link" uk-icon="icon: home"></a></li>
+            
+              <li><a href="http://abills.net.ua/">ABillS</a></li>
+            
+              <li><a href="https://github.com/diger/Nms">Github</a></li>
+            
+              <li><a href="/manuals">Help</a></li>
+            
+              <li><a href="/screenshots.html">Screenshots</a></li>
+            
+          </ul>
+      </nav>
     </div>
-  </div>
-  <div class="uk-section">
-    <div class="uk-container">
-       <h3>Установка</h3>
+    <div uk-grid>
+
+        
+<div uk-grid>
+  <div class="uk-width-3-4">
+    <h3>Установка</h3>
 
 <p>Переходим в папку с модулями установленного биллинга и тащим гитом ветку с Nms:</p>
 
@@ -54,7 +56,8 @@ ln -s ../Abills/modules/Nms/gettrap .
 <h3>Активируем модуль</h3>
 
 <p>Открываем файл <em>/usr/abills/libexec/config.pl</em>, находим массив @MODULES. <br />
-Добавляем название модуля(Nms) в список.</p>
+Добавляем название модуля(Nms) в список.
+Теперь нужно разрешить доступ к модулю <a href="http://abills.net.ua/wiki/doku.php/abills:docs:manual:admin:form_admins">определенным пользователям</a></p>
 
 <h3>Выставляем переменные</h3>
 
@@ -111,6 +114,20 @@ ln -s ../Abills/modules/Nms/gettrap .
 </tbody>
 </table>
 </div>
+
+  </div>
+  <div class="uk-width-1-4">
+    <div uk-sticky="offset: 80;bottom: true">
+      <div class="uk-card uk-card-hover">
+        <ul class="uk-margin-left uk-nav uk-nav-default">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     </div>
   </div>
