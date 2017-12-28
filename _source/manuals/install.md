@@ -1,9 +1,8 @@
 ---
-title: Help/Manuals
-side_menu:
-    1: Установка
-    2: Активируем модуль
-    3: Выставляем переменные
+layout: help
+title: Install
+categories: manuals
+urlpattern: /manuals/install.html
 ---
 
 ### Установка
@@ -27,6 +26,7 @@ ln -s ../Abills/modules/Nms/gettrap .
 
 Открываем файл */usr/abills/libexec/config.pl*, находим массив @MODULES.  
 Добавляем название модуля(Nms) в список.
+Теперь нужно разрешить доступ к модулю [определенным пользователям](http://abills.net.ua/wiki/doku.php/abills:docs:manual:admin:form_admins)
 
 ### Выставляем переменные
 

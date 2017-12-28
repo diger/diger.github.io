@@ -1,8 +1,9 @@
 ---
+layout: page
 title: Home/About
 ---
 
-## Network management module for [ABillS](http://abills.net.ua/)
+### Network management module for [ABillS](http://abills.net.ua/)
 
 Данный проект, это модуль для использования в биллинге [ABillS](http://abills.net.ua/).
 Модуль, как и сам биллинг написаны на [Perl](https://www.perl.org/).

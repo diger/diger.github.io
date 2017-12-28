@@ -3,27 +3,25 @@
 <head>
   <title>[% page.title %]</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="css/uikit.min.css" />
-  <script src="js/uikit.min.js"></script>
-  <script src="js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="/css/uikit.min.css" />
+  <script src="/js/uikit.min.js"></script>
+  <script src="/js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <div class="uk-navbar-container" uk-navbar>
-      <div class="uk-navbar-center">
-        <ul class="uk-navbar-nav">
-          <li><a href="/"><span uk-icon="icon: home"></span></a></li>
-          [% for link in site.head_menu %]
-            <li><a href="[% link.value %]">[% link.key %]</a></li>
-          [% end %]
-        </ul>
-      </div>
+  <div class="uk-container uk-container-center">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+      <nav class="uk-navbar-container uk-dark" uk-navbar>
+          <ul class="uk-navbar-nav">
+            <li><a href="/" class="uk-icon-link" uk-icon="icon: home"></a></li>
+            [% for link in site.head_menu %]
+              <li><a href="[% link.value %]">[% link.key %]</a></li>
+            [% end %]
+          </ul>
+      </nav>
     </div>
-  </div>
-  <div class="uk-section">
-    <div class="uk-container">
-       [% page.content %]
+    <div uk-grid>
+        [% page.content %]
     </div>
   </div>
 </body>

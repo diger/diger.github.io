@@ -1,0 +1,19 @@
+---
+layout: index
+---
+  <div class="uk-width-3-4">
+    [% page.content %]
+  </div>
+  <div class="uk-width-1-4">
+    <div uk-sticky="offset: 80;bottom: true">
+      <div class="uk-card uk-card-hover">
+        <ul class="uk-margin-left uk-nav uk-nav-default">
+          [% for link in site.side_menu %]
+            <li><a href="[% link.value %].html">[% link.key %]</a></li>
+          [% end %]
+        </ul>
+      </div>
+    </div>
+  </div>
+
+

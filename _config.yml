@@ -6,7 +6,13 @@ output : docs
 head_menu :
     ABillS : http://abills.net.ua/
     Screenshots : /screenshots.html
-    Help : /help.html
+    Help : /manuals
     Github : https://github.com/diger/Nms
+
+side_menu:
+    SNMP tune: snmp
+    Установка: /manuals
+    Инициализация БД: init
+    Подключаем MIB: mibs
 
 
