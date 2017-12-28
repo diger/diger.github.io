@@ -11,7 +11,7 @@ head_menu :
 
 side_menu:
     SNMP tune: snmp
-    Установка: /manuals
+    Установка: index
     Инициализация БД: init
     Подключаем MIB: mibs
 

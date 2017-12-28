@@ -23,7 +23,8 @@ ln -s ../Abills/modules/Nms/gettrap .
 ###Активируем модуль
 
 Открываем файл */usr/abills/libexec/config.pl*, находим массив @MODULES.  
-Добавляем название модуля(Nms) в список.
+Добавляем название модуля(Nms) в список.  
+Теперь нужно разрешить доступ к модулю [определенным пользователям](http://abills.net.ua/wiki/doku.php/abills:docs:manual:admin:form_admins)
 
 ### Выставляем переменные
 
