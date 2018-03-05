@@ -14,5 +14,7 @@ side_menu:
     Установка: index
     Инициализация БД: init
     Подключаем MIB: mibs
+    LLDP: lldp
+    MIB Browser: mib_browser
 
 
