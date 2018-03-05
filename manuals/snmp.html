@@ -44,13 +44,18 @@ touch /usr/local/etc/snmp/snmp.conf
 
 <h4>Рекомендуемые параметры</h4>
 
-<p>dontLoadHostConfig true - Отключает поиск/перебор файлов с локальными настройками хостов </p>
+<p>dontLoadHostConfig true - Отключает поиск/перебор файлов с локальными настройками хостов
+mibAllowUnderline true - Разрешает использование нижнего подчеркивания в именах объектов MIB(этим грешат почти все MIB от D-link). Я бы не рекомендовал использование этого ключа(непонятно, каким боком оно потом вылезет), а всё-таки самостоятельно исправить ошибки в MIB.</p>
 
   </div>
   <div class="uk-width-1-4">
     <div uk-sticky="offset: 80;bottom: true">
       <div class="uk-card uk-card-hover">
         <ul class="uk-margin-left uk-nav uk-nav-default">
+          
+            <li><a href="lldp.html">LLDP</a></li>
+          
+            <li><a href="mib_browser.html">MIB Browser</a></li>
           
             <li><a href="snmp.html">SNMP tune</a></li>
           

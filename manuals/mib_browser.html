@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>Подключаем MIB</title>
+  <title>MIB Browser</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="/css/uikit.min.css" />
   <script src="/js/uikit.min.js"></script>
@@ -29,9 +29,11 @@
     <div uk-grid>
         
   <div class="uk-width-3-4">
-    <h3>Инициализация БД</h3>
+    <h3 id="mibbrowser">MIB Browser</h3>
 
-<p>/usr/abills_git/libexec/billd nms_poll INIT=1</p>
+<p>Собственно мало что можно добавить к заголовку. Для работы с MIB пользовался большим количеством как платных, так и бесплатных программ. Из недостатков могу отметить такие как, необходимость установки Java(не для всех), платформозависимость(winonly) ну и неадекватная цена. Из бесплатных хотелось бы отметить <a href="https://sourceforge.net/projects/snmpb/">SnmpB</a>, так как он написан на <a href="http://doc.qt.io/archives/qt-4.8/">Qt</a>, то его легко портировать на множество поддерживаемых платформ. К сожалению проект уже долгое время не развивается, в результате нет поддержки современного синтаксиса MIB.
+Так как отрисовка дерева MIB достаточно ресурсоемко(тем более в браузере), используется <a href="/manuals/mibs.html">схема</a> с подключением необходимых модулей, т.е. администратор сам выбирает, какие модули ему будут нужны для работы с устройством.
+<img src="/screenshots/mibs_browser.png" alt="mibs_browser" id="mibs_browser" /></p>
 
   </div>
   <div class="uk-width-1-4">
