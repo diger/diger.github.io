@@ -10,10 +10,10 @@ title: Help/Manuals
   cd /usr/abills/Abills/modules/
   git clone https://github.com/diger/Nms.git
 </pre>
-Создаем симлинки в папку libexec:
+Создаем симлинк для поллера в папку libexec:
 <pre>
 cd /usr/abills/libexec/
-ln -s ../Abills/modules/Nms/nms_poll.pm billd.plugins/
+ln -s ../Abills/modules/Nms/nms_poll 
 </pre>
 Если будем ловить snmp трапы:
 <pre>

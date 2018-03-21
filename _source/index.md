@@ -12,6 +12,7 @@ title: Home/About
 
 Основное взаимодействие с обьектами мониторинга/управления с помощью протокола [SNMP](https://ru.wikipedia.org/wiki/SNMP). Конкретно перл модуль [SNMP](http://search.cpan.org/~hardaker/SNMP-5.0404/SNMP.pm) из пакета [Net-SNMP](www.net-snmp.org/).
 Для ловушки snmp трапов используется [Net-SNMPTrapd](http://search.cpan.org/dist/Net-SNMPTrapd/lib/Net/SNMPTrapd.pm).
+Изначально [модуль для работы с БД Redis](http://search.cpan.org/~dams/Redis-1.991/lib/Redis.pm) был опциональным, но поскольку смысла мониторинга без статистики нет, библиотеку так же устанавливаем.
 Главный упор в проекте, это максимальное использование возможностей самого протокола и [MIB](https://ru.wikipedia.org/wiki/Management_Information_Base).
 
 ### Why?
