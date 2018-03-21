@@ -39,6 +39,7 @@
 
 <p>Основное взаимодействие с обьектами мониторинга/управления с помощью протокола <a href="https://ru.wikipedia.org/wiki/SNMP">SNMP</a>. Конкретно перл модуль <a href="http://search.cpan.org/~hardaker/SNMP-5.0404/SNMP.pm">SNMP</a> из пакета <a href="www.net-snmp.org/">Net-SNMP</a>.
 Для ловушки snmp трапов используется <a href="http://search.cpan.org/dist/Net-SNMPTrapd/lib/Net/SNMPTrapd.pm">Net-SNMPTrapd</a>.
+Изначально <a href="http://search.cpan.org/~dams/Redis-1.991/lib/Redis.pm">модуль для работы с БД Redis</a> был опциональным, но поскольку смысла мониторинга без статистики нет, библиотеку так же устанавливаем.
 Главный упор в проекте, это максимальное использование возможностей самого протокола и <a href="https://ru.wikipedia.org/wiki/Management_Information_Base">MIB</a>.</p>
 
 <h3 id="why">Why?</h3>
